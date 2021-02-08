@@ -1,6 +1,9 @@
 {
   "compilerOptions": {
     "baseUrl": "./",
+    "paths": {
+      "@/public/*": ["public/*"]
+    },
     "target": "es6",
     "module": "commonjs",
     "moduleResolution": "node",

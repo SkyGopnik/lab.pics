@@ -1,0 +1,72 @@
+.portfolio {
+  margin: 90px 0;
+
+  .portfolioWrapper {
+    display: flex;
+
+    .scroll, .list {
+      width: 50%;
+    }
+
+    .scroll {
+      background-color: goldenrod;
+    }
+
+    .list {
+      padding-left: 120px;
+
+      .item {
+        height: 900px;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        //background-color: gray;
+
+        .subHeader,
+        .description,
+        .link {
+          font-family: 'TTFirsNeue-Regular', cursive;
+          font-weight: normal;
+        }
+
+        .subHeader {
+          margin: 0;
+
+          font-size: 32px;
+          line-height: 110%;
+
+          color: #2E2F33;
+        }
+
+        .header {
+          margin: 24px 0 0 0;
+
+          font-family: 'TTFirsNeue-Bold', cursive;
+          font-weight: 600;
+          font-size: 64px;
+          line-height: 110%;
+        }
+
+        .description {
+          margin: 48px 0 0 0;
+
+          font-size: 26px;
+          line-height: 150%;
+
+          color: #717AA6;
+        }
+
+        .link {
+          margin: 36px 0 0 0;
+
+          font-size: 32px;
+          line-height: 150%;
+
+          color: #006BFF !important;
+        }
+      }
+    }
+  }
+}

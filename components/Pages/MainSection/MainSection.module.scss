@@ -1,0 +1,171 @@
+// Main section
+.main {
+  .rightImg {
+    width: 1050px;
+    height: 100vh;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    z-index: -1;
+
+    background-image: url("../../../public/heroImg.svg");
+    background-repeat: no-repeat;
+    background-position: center top;
+
+    @media screen and (max-height: 920px) {
+      background-position: center;
+    }
+
+    @media screen and (max-width: 1520px) {
+      background-size: 70%;
+      background-position: top right;
+    }
+
+    @media screen and (max-width: 1110px) {
+      display: none;
+    }
+  }
+
+  .content {
+    height: 100vh;
+
+    display: flex;
+    //align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .wordWrap {
+      display: none;
+    }
+
+    h1 {
+      margin: 0;
+
+      font-family: 'TTFirsNeue-Bold', cursive;
+      font-size: 72px;
+      line-height: 110%;
+      letter-spacing: 1.2px;
+
+      color: #2E2F33;
+
+      .year {
+        color: #006bff;
+      }
+    }
+
+    h3 {
+      margin: 22px 0 0 0;
+
+      font-family: 'TTFirsNeue-Regular', cursive;
+      font-size: 26px;
+      font-weight: normal;
+
+      color: #717aa6;
+    }
+
+    @media screen and (max-width: 1520px) {
+      h1 {
+        font-size: 60px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      h1 {
+        font-size: 46px;
+      }
+
+      h3 {
+        margin: 22px 10px 0 10px;
+
+        //font-size: 18px;
+      }
+    }
+
+    .action {
+      position: relative;
+
+      $buttonWidth: 280px;
+      $buttonHeight: 70px;
+      $buttonTop: 50px;
+
+      button {
+        width: $buttonWidth;
+        height: $buttonHeight;
+
+        margin-top: $buttonTop;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 31px;
+
+        border: 1px solid #006BFF;
+        outline: none;
+        box-sizing: border-box;
+        border-radius: 35px;
+
+        cursor: pointer;
+        transition: .5s;
+
+        color: #006BFF;
+        background-color: transparent;
+
+        &:hover {
+          opacity: .5;
+        }
+      }
+
+      .arrow {
+        width: 62px;
+        height: 185px;
+
+        position: absolute;
+        top: $buttonTop + $buttonHeight / 2;
+        left: $buttonWidth + 40px;
+
+        background: url("../../../public/arrow.png") no-repeat;
+
+        @media screen and (max-width: 1520px) {
+          display: none;
+        }
+      }
+
+      @media screen and (max-width: 1520px) {
+        button {
+          margin-top: $buttonTop - 20px;
+        }
+      }
+
+      @media screen and (max-width: 600px) {
+        button {
+          height: $buttonHeight - 20px;
+
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 1110px) {
+    .content {
+      align-items: center;
+
+      text-align: center;
+
+      .noWordWrap {
+        display: none;
+      }
+
+      .wordWrap {
+        display: flex;
+      }
+    }
+  }
+}
