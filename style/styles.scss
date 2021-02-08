@@ -1,0 +1,52 @@
+@font-face {
+  font-family: 'TTFirsNeue-Bold';
+  src: url('../public/static/fonts/TTFirsNeue-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeue-DemiBold';
+  src: url('../public/static/fonts/TTFirsNeue-DemiBold.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeue-Medium';
+  src: url('../public/static/fonts/TTFirsNeue-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'TTFirsNeue-Regular';
+  src: url('../public/static/fonts/TTFirsNeue-Regular.ttf');
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: #000 !important;
+  text-decoration: none
+}
+
+.container {
+  width: 1520px;
+
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 1520px) {
+  .container {
+    width: 100%;
+  }
+
+  section {
+    padding: 0 50px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  section {
+    padding: 0 20px;
+  }
+}
+
