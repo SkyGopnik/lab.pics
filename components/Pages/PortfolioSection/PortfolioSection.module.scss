@@ -9,7 +9,13 @@
     }
 
     .scroll {
-      background-color: goldenrod;
+      position: relative;
+      //background-color: goldenrod;
+      div {
+        height: 650px;
+
+        background-color: goldenrod;
+      }
     }
 
     .list {

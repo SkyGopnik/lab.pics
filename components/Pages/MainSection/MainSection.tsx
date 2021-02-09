@@ -5,7 +5,7 @@ import style from "./MainSection.module.scss";
 export class MainSection extends React.Component {
   render() {
     return (
-      <section className={style.main}>
+      <section id="main-section" className={style.main}>
         <div className={style.rightImg} />
         <div className="container">
           <div className={style.content}>
