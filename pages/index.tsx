@@ -3,7 +3,8 @@ import React from "react";
 import { Header } from "../components";
 import {
   MainSection,
-  PortfolioSection
+  PortfolioSection,
+  ServicesSection
 } from "../components/Pages";
 
 export default class extends React.Component {
@@ -13,6 +14,7 @@ export default class extends React.Component {
         <Header />
         <MainSection />
         <PortfolioSection />
+        <ServicesSection />
       </>
     )
   };
