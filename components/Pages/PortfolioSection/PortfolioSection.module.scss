@@ -12,9 +12,13 @@
       position: relative;
       //background-color: goldenrod;
       div {
-        height: 650px;
+        height: 900px;
+        width: 100%;
 
-        background-color: goldenrod;
+        position: sticky;
+        top: 70px;
+
+        z-index: -1;
       }
     }
 

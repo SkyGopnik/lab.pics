@@ -2,7 +2,7 @@
   "compilerOptions": {
     "baseUrl": "./",
     "paths": {
-      "@/public/*": ["public/*"]
+      "@public/*": ["public/*"]
     },
     "target": "es6",
     "module": "commonjs",

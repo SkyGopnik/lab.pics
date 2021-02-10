@@ -1,50 +1,22 @@
 import React from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 
 import style from './PortfolioSection.module.scss';
 
-interface IProps {}
-
-interface IState {
-  scrollBlock: number
-}
-
-export class PortfolioSection extends React.Component<IProps, IState> {
+export class PortfolioSection extends React.Component {
   constructor(props) {
     super(props);
-
-    this.state = {
-      scrollBlock: 0
-    };
-  }
-
-  componentDidMount() {
-    document.addEventListener('scroll', (e) => {
-      const fromY = document.getElementById('main-section').offsetHeight;
-      console.log('----');
-      console.log(document.getElementById('main-section').offsetHeight);
-      console.log(pageYOffset);
-
-      this.setState({
-        scrollBlock: pageYOffset > fromY + 50 ? pageYOffset - fromY + 50 : 0
-      })
-    });
   }
 
   render() {
-    const { scrollBlock } = this.state;
-
     return (
       <section className={style.portfolio}>
         <div className="container">
           <div className={style.portfolioWrapper}>
-            <div className={style.scroll} onClick={() => this.setState({ scrollBlock: scrollBlock + 50 })}>
-              {/*<motion.div animate={{ y: scrollBlock }}>1</motion.div>*/}
-              <div style={{
-                position: "sticky",
-                top: 90
-              }}>123</div>
+            <div className={style.scroll}>
+              <div><img src="/static/portfolio/1.png" alt="" /></div>
+              <div><img src="/static/portfolio/2.png" alt="" /></div>
+              <div><img src="/static/portfolio/3.png" alt="" /></div>
             </div>
             <div className={style.list}>
               <div className={style.item}>

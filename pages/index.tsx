@@ -13,10 +13,6 @@ export default class extends React.Component {
         <Header />
         <MainSection />
         <PortfolioSection />
-        <div style={{
-          height: "900px",
-          backgroundColor: "blue"
-        }}>123</div>
       </>
     )
   };

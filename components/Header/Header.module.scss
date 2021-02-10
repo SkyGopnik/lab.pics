@@ -9,7 +9,8 @@
   display: flex;
   align-items: center;
 
-  //border-bottom: 1px solid grey;
+  transition: .3s;
+  z-index: 100;
 
   .headerWrapper {
     display: flex;
@@ -42,6 +43,10 @@
       }
     }
   }
+}
+
+.headerBg {
+  background-color: #fff;
 }
 
 @media screen and (max-width: 1520px) {

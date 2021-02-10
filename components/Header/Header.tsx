@@ -3,10 +3,35 @@ import Link from "next/link";
 
 import style from "./Header.module.scss";
 
-export class Header extends React.Component {
+interface IProps {}
+
+interface IState {
+  isBackground: boolean
+}
+
+export class Header extends React.Component<IProps, IState> {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      isBackground: false
+    };
+  }
+
+  componentDidMount() {
+    document.addEventListener('scroll', () => {
+      console.log(pageYOffset);
+      this.setState({
+        isBackground: pageYOffset !== 0
+      })
+    });
+  }
+
   render() {
+    const { isBackground } = this.state;
+
     return (
-      <header className={style.header}>
+      <header className={!isBackground ? style.header : `${style.header} ${style.headerBg}`}>
         <div className="container">
           <div className={style.headerWrapper}>
             <Link href="/">
