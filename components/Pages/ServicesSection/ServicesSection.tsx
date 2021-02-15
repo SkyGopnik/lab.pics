@@ -1,37 +1,82 @@
 import React from "react";
-import classNames from 'classnames';
-
 import style from "./ServicesSection.module.scss";
 
-export class ServicesSection extends React.Component {
+interface IProps {}
+
+interface IState {
+  services: Array<{
+    title: string,
+    description: string,
+    price: number
+  }>
+}
+
+export class ServicesSection extends React.Component<IProps, IState> {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      services: [
+        {
+          title: 'Логотипы',
+          description: 'Развивайте свой бренд, а мы поможем Вам в этом',
+          price: 5250
+        },
+        {
+          title: 'Мобильное приложение',
+          description: 'Расширяйте свой бизнес, с помощью мобильных приложений',
+          price: 14800
+        },
+        {
+          title: 'Лендинги',
+          description: 'Решайте задачи с помощью веб-сайтов, созданных под Вашу аудиторию',
+          price: 14800
+        },
+        {
+          title: 'Сайт повышенной сложности',
+          description: 'Интернет-магазины, корпоративные сайты, системы и так далее',
+          price: 27800
+        },
+        {
+          title: 'Оформление соц. сетей',
+          description: 'Поможем оформить Вашу любимую социальную сеть',
+          price: 3750
+        },
+        {
+          title: 'Разработка на Tilda',
+          description: 'Сделаем полноценный сайт на Tilda',
+          price: 5200
+        },
+        {
+          title: 'Печатная продукция',
+          description: 'Дизайн печатной продукции обговаривается индивидуально',
+          price: 1400
+        }
+      ]
+    };
+  }
+
   render() {
+    const { services } = this.state;
+
     return (
       <section className={style.services}>
-        <div className={style.item} style={{ backgroundColor: "#F4F6FC" }}>
-          <h1 className={style.name}>Разработка логотипа</h1>
-          <h4 className={style.price}>4500₽, от 3 дней</h4>
-          <button>Подробнее</button>
-        </div>
-        <div className={style.smallWrapper}>
-          <div className={style.item} style={{ backgroundColor: "#F0FAF5" }}>
-            <h1 className={classNames(style.name, style.noneAdapt)}>
-              <div>Оформление</div>
-              <div>соц.сети</div>
-            </h1>
-            <h1 className={classNames(style.name, style.adapt)}>Оформление соц.сети</h1>
-          </div>
-          <div className={style.item} style={{ backgroundColor: "#FCF8F2" }}>
-            <h1 className={classNames(style.name, style.noneAdapt)}>
-              <div>Сайт на</div>
-              <div>Tilda</div>
-            </h1>
-            <h1 className={classNames(style.name, style.adapt)}>Сайт на Tilda</h1>
-          </div>
-        </div>
-        <div className={style.item} style={{ backgroundColor: "#F4F6FC" }}>
-          <h1 className={style.name}>Веб-сайт, приложения</h1>
-          <h4 className={style.price}>От 14800₽, от 2 недель</h4>
-          <button>Сделать заказ</button>
+        <div className="container">
+          {services.map((item, index) => (
+            <div key={index}>
+              <div className={style.item}>
+                <div className={style.content}>
+                  <h1 className={style.title}>{item.title}</h1>
+                  <h4 className={style.description}>
+                    <div>{item.description}</div>
+                    <div className={style.price}>от {item.price.toLocaleString()}₽</div>
+                  </h4>
+                  <h4 className={style.price}>от {item.price.toLocaleString()}₽</h4>
+                </div>
+              </div>
+              {(index !== services.length - 1) && <div className={style.separator} />}
+            </div>
+          ))}
         </div>
       </section>
     );

@@ -1,7 +1,7 @@
 .portfolio {
   margin: 90px 0;
 
-  .portfolioWrapper {
+  .web {
     display: flex;
 
     .scroll, .list {
@@ -16,9 +16,17 @@
         width: 100%;
 
         position: sticky;
-        top: 70px;
+        top: 80px;
 
         z-index: -1;
+
+        img {
+          position: absolute;
+          left: 0;
+          top: 0;
+          width: 100%;
+          height: auto;
+        }
       }
     }
 
@@ -78,5 +86,130 @@
         }
       }
     }
+
+    @media screen and (max-width: 1400px) {
+      .scroll {
+        width: 40%;
+
+        div {
+          height: 700px;
+
+          img {
+            top: 50px;
+          }
+        }
+      }
+
+      .list {
+        width: 60%;
+
+        padding-left: 80px;
+
+        .item {
+          height: 700px;
+
+          .subHeader, .link {
+            font-size: 26px;
+          }
+
+          .header {
+            margin: 20px 0 0 0;
+
+            font-size: 60px;
+          }
+
+          .description {
+            margin: 20px 0 0 0;
+
+            font-size: 20px;
+          }
+
+          .link {
+            margin: 20px 0 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  .mobile {
+    width: 100%;
+
+    display: none;
+
+    margin: 50px 0;
+
+    grid-template-columns: 1fr 1fr;
+    column-gap: 40px;
+    row-gap: 40px;
+
+    .item {
+      width: 100%;
+
+      img {
+        //display: none;
+        width: 100%;
+        height: 400px;
+
+        object-fit: cover;
+
+        border-radius: 20px;
+      }
+
+      h4 {
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 150%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .web {
+      display: none;
+    }
+
+    .mobile {
+      display: grid;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .mobile {
+      grid-template-columns: 1fr;
+      column-gap: 40px;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+          width: 70%;
+        }
+
+        h4 {
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .mobile {
+      .item {
+        img {
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .portfolio {
+    margin: 0;
   }
 }

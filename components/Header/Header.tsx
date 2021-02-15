@@ -20,7 +20,6 @@ export class Header extends React.Component<IProps, IState> {
 
   componentDidMount() {
     document.addEventListener('scroll', () => {
-      console.log(pageYOffset);
       this.setState({
         isBackground: pageYOffset > 0
       })
