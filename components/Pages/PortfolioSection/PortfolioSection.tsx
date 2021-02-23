@@ -1,6 +1,5 @@
 import React from "react";
 import Link from "next/link";
-import classNames from "classNames";
 
 import style from './PortfolioSection.module.scss';
 

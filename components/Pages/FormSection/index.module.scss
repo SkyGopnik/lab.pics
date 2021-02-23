@@ -1,0 +1,98 @@
+.form {
+  //height: 1000px;
+  margin: 150px 0;
+
+  position: relative;
+
+  //overflow: hidden;
+
+  //height: 300px;
+  //background-color: gray;
+
+  .rightImg, .leftImg {
+    position: absolute;
+  }
+
+  .rightImg {
+    top: 200px;
+    right: 0;
+  }
+
+  .leftImg {
+    left: 0;
+    bottom: -600px;
+  }
+
+  .wrapper {
+    padding: 0 150px;
+
+    display: flex;
+    align-items: center;
+
+    .sendForm {
+      margin-left: 150px;
+
+      h1 {
+        margin: 24px 0;
+
+        font-family: 'TTFirsNeue-Bold', cursive;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+      }
+
+      .input {
+        padding: 12px 0;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 24px;
+        line-height: 150%;
+
+        div {
+          color: #2E2F33;
+        }
+
+        input {
+          width: 100%;
+
+          margin: 12px 0;
+          padding: 24px;
+
+          font-size: 18px;
+
+          outline: none;
+
+          border-radius: 15px;
+          border: 2px solid #E9EBF5;
+
+          box-sizing: border-box;
+          background-color: transparent;
+
+          &::placeholder {
+            color: #717AA6;
+          }
+        }
+      }
+
+      button {
+        width: 200px;
+        height: 70px;
+
+        margin: 12px 0;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 24px;
+        line-height: 150%;
+
+        border-radius: 15px;
+        border: none;
+        outline: none;
+
+        cursor: pointer;
+
+        color: #ffffff;
+        background: #006BFF;
+      }
+    }
+  }
+}
