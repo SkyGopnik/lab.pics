@@ -2,6 +2,7 @@ import React from "react";
 
 import { Header } from "../components";
 import {
+  AboutSection,
   FormSection,
   MainSection,
   PortfolioSection,
@@ -21,7 +22,7 @@ export default class extends React.Component {
         <PortfolioSection />
         <ServicesSection />
         <FormSection />
-        <div style={{ height: '500px', backgroundColor: 'gold' }}>1</div>
+        <AboutSection />
       </>
     )
   };

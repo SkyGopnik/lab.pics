@@ -28,6 +28,10 @@ a {
   text-decoration: none
 }
 
+img, svg {
+  user-select: none;
+}
+
 .container {
   width: 1520px;
 

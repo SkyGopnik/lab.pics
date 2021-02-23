@@ -1,6 +1,5 @@
 .form {
-  //height: 1000px;
-  margin: 150px 0;
+  padding: 150px 0;
 
   position: relative;
 
@@ -14,17 +13,17 @@
   }
 
   .rightImg {
-    top: 200px;
+    top: 300px;
     right: 0;
   }
 
   .leftImg {
     left: 0;
-    bottom: -600px;
+    bottom: -500px;
   }
 
   .wrapper {
-    padding: 0 150px;
+    margin: 0 150px;
 
     display: flex;
     align-items: center;

@@ -1,0 +1,85 @@
+.about {
+  padding: 150px 0;
+  //padding: 0 150px;
+  //position: relative;
+
+  .wrapper {
+    margin: 0 150px;
+
+    display: flex;
+
+    //border: 1px solid gold;
+
+    .info {
+      width: 50%;
+
+      h1 {
+        margin: 12px 0;
+
+        font-family: 'TTFirsNeue-Bold', cursive;
+        font-weight: 600;
+        font-size: 48px;
+        line-height: 62px;
+      }
+
+      p {
+        margin: 24px 0;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 150%;
+
+        color: #2E2F33;
+
+        span {
+          color: #006BFF;
+        }
+      }
+    }
+
+    .links {
+      width: 50%;
+
+      margin: 50px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        img {
+          margin: 8px 0;
+        }
+
+        h4 {
+          margin: 8px 0;
+
+          font-family: 'TTFirsNeue-Bold', cursive;
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 31px;
+        }
+
+        p {
+          width: 70%;
+
+          margin: 0;
+
+          text-align: center;
+
+          font-family: 'TTFirsNeue-Regular', cursive;
+          font-size: 18px;
+          line-height: 21px;
+
+          color: #717AA6;
+        }
+      }
+    }
+  }
+}
