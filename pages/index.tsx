@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Header } from "../components";
+import {Footer, Header} from "../components";
 import {
   AboutSection,
   FormSection,
@@ -23,6 +23,7 @@ export default class extends React.Component {
         <ServicesSection />
         <FormSection />
         <AboutSection />
+        <Footer />
       </>
     )
   };

@@ -1,0 +1,81 @@
+.footer {
+  height: 390px;
+
+  display: flex;
+
+  .data {
+    width: 50%;
+    height: 100%;
+
+    padding: 75px 0;
+
+    display: flex;
+    justify-content: flex-end;
+
+    border-radius: 0 30px 0 0;
+    box-sizing: border-box;
+
+    color: #ffffff;
+    background-color: #1D2126;
+
+    a {
+      margin: 8px 0;
+
+      position: relative;
+      bottom: 0;
+
+      font-family: 'TTFirsNeue-Regular', cursive;
+      font-size: 17px;
+      line-height: 22px;
+
+      transition: 0.3s;
+
+      color: #ffffff !important;
+
+      &:hover {
+        bottom: 3px;
+      }
+    }
+
+    .menu {
+      margin-right: 150px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      a {
+        margin: 0;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+
+    .contacts {
+      margin-right: 124px;
+
+      display: flex;
+      flex-direction: column;
+
+      .title {
+        margin: 0 0 8px 0;
+
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 36px;
+        line-height: 46px;
+      }
+
+      a {
+        font-family: 'TTFirsNeue-Regular', cursive;
+        font-size: 17px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  img {
+    margin-left: 130px;
+  }
+}
