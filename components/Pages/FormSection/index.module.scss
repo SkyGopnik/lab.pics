@@ -10,6 +10,8 @@
 
   .rightImg, .leftImg {
     position: absolute;
+
+    z-index: -1;
   }
 
   .rightImg {
@@ -20,6 +22,12 @@
   .leftImg {
     left: 0;
     bottom: -500px;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .rightImg, .leftImg {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -72,7 +80,7 @@
           border: 2px solid #E9EBF5;
 
           box-sizing: border-box;
-          background-color: transparent;
+          background-color: #fff;
 
           &::placeholder {
             color: #717AA6;

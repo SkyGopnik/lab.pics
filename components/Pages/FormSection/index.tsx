@@ -11,8 +11,8 @@ export class FormSection extends React.Component {
     return (
       <section className={style.form}>
         <div className="container">
-          {/*<img className={style.rightImg} src="/static/clouds/1.svg" alt="" />*/}
-          {/*<img className={style.leftImg} src="/static/clouds/2.svg" alt="" />*/}
+          <img className={style.rightImg} src="/static/clouds/1.svg" alt="" />
+          <img className={style.leftImg} src="/static/clouds/2.svg" alt="" />
           <div className={style.wrapper}>
             <img src="/static/form.svg" alt="" />
             <div className={style.sendForm}>
