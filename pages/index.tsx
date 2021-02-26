@@ -22,7 +22,7 @@ export default class extends React.Component {
         <PortfolioSection />
         <ServicesSection />
         <FormSection />
-        <AboutSection />
+        {/*<AboutSection />*/}
         <Footer />
       </>
     )

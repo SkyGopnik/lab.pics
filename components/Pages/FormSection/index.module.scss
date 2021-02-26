@@ -31,8 +31,14 @@
     .sendForm {
       margin-left: 150px;
 
+      @media screen and (max-width: 1110px) {
+        & {
+          margin-left: 50px;
+        }
+      }
+
       h1 {
-        margin: 24px 0;
+        margin: 0 0 24px 0;
 
         font-family: 'TTFirsNeue-Bold', cursive;
         font-weight: 600;
@@ -91,6 +97,76 @@
 
         color: #ffffff;
         background: #006BFF;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .form {
+    padding: 50px 0;
+
+    .wrapper {
+      margin: 0 50px;
+
+      .sendForm {
+        h1 {
+          margin-bottom: 0;
+
+          font-size: 36px;
+          line-height: 110%;
+        }
+
+        .input {
+          font-size: 20px;
+          line-height: 110%;
+        }
+      }
+
+      img {
+        width: 250px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .form {
+    .wrapper {
+      margin: 0 50px;
+
+      .sendForm {
+        width: 100%;
+
+        margin-left: 0;
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .form {
+    padding: 30px 0;
+
+    .wrapper {
+      margin: 0 20px;
+
+      .sendForm {
+        h1 {
+          margin-bottom: 24px;
+
+          text-align: center;
+        }
+
+        button {
+          width: 100%;
+
+          margin: 0;
+        }
       }
     }
   }
