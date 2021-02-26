@@ -7,6 +7,7 @@
     margin: 0 150px;
 
     display: flex;
+    align-items: center;
 
     //border: 1px solid gold;
 
@@ -16,7 +17,7 @@
       h1 {
         margin: 12px 0;
 
-        font-family: 'TTFirsNeue-Bold', cursive;
+        font-family: 'TTFirsNeue-DemiBold', cursive;
         font-weight: 600;
         font-size: 48px;
         line-height: 62px;
@@ -43,41 +44,155 @@
 
       margin: 50px;
 
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+      h1 {
+        display: none;
+      }
 
-      .item {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+      .list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-row-gap: 20px;
 
-        img {
-          margin: 8px 0;
+        //background-color: gold;
+
+        .item {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            margin: 8px 0;
+          }
+
+          h4 {
+            margin: 8px 0;
+
+            font-family: 'TTFirsNeue-Bold', cursive;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 31px;
+          }
+
+          p {
+            width: 200px;
+
+            margin: 0;
+
+            text-align: center;
+
+            font-family: 'TTFirsNeue-Regular', cursive;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #717AA6;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1520px) {
+        & {
+          margin: 50px 0 50px 50px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1350px) {
+  .about {
+    padding: 50px 0;
+
+    .wrapper {
+      flex-direction: column;
+      align-items: flex-start;
+
+      .info {
+        width: 100%;
+      }
+
+      .links {
+        width: 60%;
+
+        margin: 20px 0;
+
+        //background-color: goldenrod;
+
+        h1 {
+          margin: 12px 0;
+
+          display: block;
+
+          font-family: 'TTFirsNeue-DemiBold', cursive;
+          font-weight: 600;
+          font-size: 48px;
+          line-height: 62px;
         }
 
-        h4 {
-          margin: 8px 0;
+        .list {
+          grid-template-columns: .5fr .5fr;
+          grid-template-rows: 1fr 1fr;
 
-          font-family: 'TTFirsNeue-Bold', cursive;
-          font-weight: bold;
-          font-size: 24px;
-          line-height: 31px;
+          .item {
+            p {
+              //width: 50%;
+            }
+          }
         }
+      }
+    }
+  }
+}
 
+@media screen and (max-width: 1110px) {
+  .about {
+    .wrapper {
+      margin: 0 50px;
+
+      .info, .links {
+        h1 {
+          font-size: 36px;
+          line-height: 110%;
+        }
+      }
+
+      .info {
         p {
-          width: 70%;
+          font-size: 20px;
+        }
+      }
 
-          margin: 0;
+      .links {
+        width: 100%;
+      }
+    }
+  }
+}
 
-          text-align: center;
+@media screen and (max-width: 600px) {
+  .about {
+    padding: 30px 0;
 
-          font-family: 'TTFirsNeue-Regular', cursive;
-          font-size: 18px;
-          line-height: 21px;
+    .wrapper {
+      margin: 0 20px;
+    }
+  }
+}
 
-          color: #717AA6;
+@media screen and (max-width: 500px) {
+  .about {
+    .wrapper {
+      .links {
+        .list {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr;
+
+          .item {
+            p {
+              width: auto;
+            }
+          }
         }
       }
     }

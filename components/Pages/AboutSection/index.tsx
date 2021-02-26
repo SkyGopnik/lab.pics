@@ -61,18 +61,21 @@ export class AboutSection extends React.Component<IProps, IState> {
               <p>Мы специализируемся на веб-дизайне, но также всегда готовы сделать запоминающиеся логотипы, приятные оформления и многое другое!</p>
             </div>
             <div className={style.links}>
-              {links.map((item, index) => (
-                <a
-                  className={style.item}
-                  key={index}
-                  href={item.href}
-                  target="_blank"
-                >
-                  <img src={item.src} alt={item.title} />
-                  <h4>{item.title}</h4>
-                  <p>{item.description}</p>
-                </a>
-              ))}
+              <h1>Следите за нами в соц.сетях</h1>
+              <div className={style.list}>
+                {links.map((item, index) => (
+                  <a
+                    className={style.item}
+                    key={index}
+                    href={item.href}
+                    target="_blank"
+                  >
+                    <img src={item.src} alt={item.title} />
+                    <h4>{item.title}</h4>
+                    <p>{item.description}</p>
+                  </a>
+                ))}
+              </div>
             </div>
           </div>
         </div>

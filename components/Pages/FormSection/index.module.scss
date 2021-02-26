@@ -40,7 +40,8 @@
       h1 {
         margin: 0 0 24px 0;
 
-        font-family: 'TTFirsNeue-Bold', cursive;
+        //font-family: 'TTFirsNeue-Bold', cursive;
+        font-family: 'TTFirsNeue-DemiBold', cursive;
         font-weight: 600;
         font-size: 48px;
         line-height: 62px;
@@ -77,6 +78,18 @@
             color: #717AA6;
           }
         }
+
+        @media screen and (max-width: 450px) {
+          & {
+            padding: 6px 0;
+
+            input {
+              padding: 14px;
+
+              border-radius: 10px;
+            }
+          }
+        }
       }
 
       button {
@@ -97,6 +110,14 @@
 
         color: #ffffff;
         background: #006BFF;
+
+        @media screen and (max-width: 450px) {
+          & {
+            height: 50px;
+
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
@@ -157,8 +178,6 @@
 
       .sendForm {
         h1 {
-          margin-bottom: 24px;
-
           text-align: center;
         }
 
