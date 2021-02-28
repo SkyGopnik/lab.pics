@@ -137,6 +137,10 @@
         color: #ffffff;
         background: #006BFF;
 
+        &:hover {
+          opacity: .5;
+        }
+
         @media screen and (max-width: 450px) {
           & {
             height: 50px;
