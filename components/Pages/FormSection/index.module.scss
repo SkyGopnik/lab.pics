@@ -133,9 +133,14 @@
         outline: none;
 
         cursor: pointer;
+        transition: .5s;
 
         color: #ffffff;
         background: #006BFF;
+
+        &:hover {
+          opacity: .5;
+        }
 
         @media screen and (max-width: 450px) {
           & {
