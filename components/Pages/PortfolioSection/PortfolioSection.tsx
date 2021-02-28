@@ -64,11 +64,11 @@ export class PortfolioSection extends React.Component {
           </div>
           <div className={style.mobile}>
             <div className={style.item}>
-              <img src="/static/portfolio/1.png" alt="" />
+              <img src="/static/portfolio/mobile_1.jpg" alt="" />
               <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
             </div>
             <div className={style.item}>
-              <img src="/static/portfolio/2.png" alt="" />
+              <img src="/static/portfolio/mobile_2.jpg" alt="" />
               <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
             </div>
             <div className={style.item}>

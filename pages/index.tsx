@@ -1,4 +1,5 @@
 import React from "react";
+import axios from 'axios';
 
 import {Footer, Header} from "../components";
 import {
@@ -9,11 +10,10 @@ import {
   ServicesSection
 } from "../components/Pages";
 
-export default class extends React.Component {
-  componentDidMount() {
-    window.scrollTo(0,document.body.scrollHeight);
-  }
+axios.defaults.baseURL = 'https://api.lab.pics';
+axios.defaults.responseType = 'json';
 
+export default class extends React.Component {
   render() {
     return (
       <>
