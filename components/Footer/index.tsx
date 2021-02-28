@@ -27,7 +27,7 @@ export class Footer extends React.Component {
             <a href="https://vk.com/lab.dsgn">VK</a>
           </div>
         </div>
-        <img src="/static/FooterHero.svg" alt="" />
+        <img src="/static/FooterHero.svg" alt="Герой" />
 
         {/*<div className="container">*/}
         {/*  1*/}

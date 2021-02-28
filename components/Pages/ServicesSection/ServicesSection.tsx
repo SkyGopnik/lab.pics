@@ -40,7 +40,7 @@ export class ServicesSection extends React.Component<IProps, IState> {
           price: 27800
         },
         {
-          title: 'Оформление соц. сетей',
+          title: 'Оформление соц.сетей',
           description: 'Поможем оформить Вашу любимую социальную сеть',
           price: 3750
         },

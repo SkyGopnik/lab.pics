@@ -16,10 +16,10 @@ export class PortfolioSection extends React.Component {
           <div className="container">
             <div className={style.web}>
               <div className={style.scroll}>
-                <div><img src="/static/portfolio/1.png" alt="" /></div>
-                <div><img src="/static/portfolio/2.png" alt="" /></div>
-                <div><img src="/static/portfolio/3.png" alt="" /></div>
-                <div><img src="/static/portfolio/4.png" alt="" /></div>
+                <div><img src="/static/portfolio/1.png" alt="Портфолио-1" /></div>
+                <div><img src="/static/portfolio/2.png" alt="Портфолио-2" /></div>
+                <div><img src="/static/portfolio/3.png" alt="Портфолио-3" /></div>
+                <div><img src="/static/portfolio/4.png" alt="Портфолио-4" /></div>
               </div>
               <div className={style.list}>
                 <div className={style.item}>
@@ -66,19 +66,19 @@ export class PortfolioSection extends React.Component {
             </div>
             <div className={style.mobile}>
               <div className={style.item}>
-                <img src="/static/portfolio/mobile_1.jpg" alt="" />
+                <img src="/static/portfolio/mobile_1.jpg" alt="Портфолио-1" />
                 <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
               </div>
               <div className={style.item}>
-                <img src="/static/portfolio/mobile_2.jpg" alt="" />
+                <img src="/static/portfolio/mobile_2.jpg" alt="Портфолио-2" />
                 <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
               </div>
               <div className={style.item}>
-                <img src="/static/portfolio/3.png" alt="" />
+                <img src="/static/portfolio/3.png" alt="Портфолио-3" />
                 <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
               </div>
               <div className={style.item}>
-                <img src="/static/portfolio/4.png" alt="" />
+                <img src="/static/portfolio/4.png" alt="Портфолио-4" />
                 <h4><b>Genesis Vision</b> - платформа доверительного управления инвестициями</h4>
               </div>
             </div>

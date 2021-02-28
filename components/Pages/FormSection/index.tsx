@@ -119,10 +119,10 @@ export class FormSection extends React.Component<IProps, IState> {
       <ScrollableAnchor id="form">
         <section className={style.form}>
           <div className="container">
-            <img className={style.rightImg} src="/static/clouds/1.svg" alt="" />
-            <img className={style.leftImg} src="/static/clouds/2.svg" alt="" />
+            <img className={style.rightImg} src="/static/clouds/1.svg" alt="Облако-1" />
+            <img className={style.leftImg} src="/static/clouds/2.svg" alt="Облако-2" />
             <div className={style.wrapper}>
-              <img src="/static/form.svg" alt="" />
+              <img src="/static/form.svg" alt="Герой" />
               <div className={style.sendForm}>
                 <h1>Давайте сотрудничать</h1>
                 <div className={style.input}>

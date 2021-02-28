@@ -38,7 +38,7 @@ export class Header extends React.Component<IProps, IState> {
         <div className="container">
           <div className={style.headerWrapper}>
             <Link href="/">
-              <a><img className={style.logo} src="/static/Logo.svg" alt="" /></a>
+              <a><img className={style.logo} src="/static/Logo.svg" alt="Логотип" /></a>
             </Link>
             <div className={style.menu}>
               <div className={style.item}>
