@@ -1,6 +1,7 @@
 import React from "react";
-import classNames from 'classNames';
 import Link from "next/link";
+
+import { classNames } from 'functions';
 
 import style from "./Header.module.scss";
 
@@ -50,7 +51,7 @@ export class Header extends React.Component<IProps, IState> {
                 <a href="#about">О нас</a>
               </div>
             </div>
-            <div className={!isHamburgerOpened ? style.mobileMenu : classNames(style.mobileMenu, style.mobileMenuActive)}>
+            <div className={!isHamburgerOpened ? style.mobileMenu : classNames([style.mobileMenu, style.mobileMenuActive])}>
               <div className={style.hamburger} onClick={() => this.setState({ isHamburgerOpened: !isHamburgerOpened })}>
                 <div className={style.line} />
                 <div className={style.line} />

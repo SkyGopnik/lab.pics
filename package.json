@@ -9,7 +9,6 @@
   },
   "dependencies": {
     "axios": "^0.21.1",
-    "classnames": "^2.2.6",
     "framer-motion": "^3.3.0",
     "nan": "^2.14.2",
     "next": "^10.0.0",
