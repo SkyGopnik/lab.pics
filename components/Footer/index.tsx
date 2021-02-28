@@ -21,11 +21,11 @@ export class Footer extends React.Component {
           </div>
           <div className={style.contacts}>
             <div className={style.title}>Контакты</div>
-            <a href="#">design@lab.pics</a>
-            <a href="#">Behance</a>
-            <a href="#">Instagram</a>
-            <a href="#">Dribbble</a>
-            <a href="#">VK</a>
+            <a href="mailto:design@lab.pics">design@lab.pics</a>
+            <a href="https://www.behance.net/labdes">Behance</a>
+            <a href="https://t.me/labdes">Telegram</a>
+            <a href="https://dribbble.com/labdesign">Dribbble</a>
+            <a href="https://vk.com/lab.dsgn">VK</a>
           </div>
         </div>
         <img src="/static/FooterHero.svg" alt="" />
