@@ -1,4 +1,5 @@
 import React from "react";
+import classNames from 'classNames';
 import Link from "next/link";
 
 import style from "./Header.module.scss";
@@ -6,7 +7,8 @@ import style from "./Header.module.scss";
 interface IProps {}
 
 interface IState {
-  isBackground: boolean
+  isBackground: boolean,
+  isHamburgerOpened: boolean
 }
 
 export class Header extends React.Component<IProps, IState> {
@@ -14,7 +16,8 @@ export class Header extends React.Component<IProps, IState> {
     super(props);
 
     this.state = {
-      isBackground: false
+      isBackground: false,
+      isHamburgerOpened: false
     };
   }
 
@@ -27,7 +30,7 @@ export class Header extends React.Component<IProps, IState> {
   }
 
   render() {
-    const { isBackground } = this.state;
+    const { isBackground, isHamburgerOpened } = this.state;
 
     return (
       <header className={!isBackground ? style.header : `${style.header} ${style.headerBg}`}>
@@ -38,12 +41,25 @@ export class Header extends React.Component<IProps, IState> {
             </Link>
             <div className={style.menu}>
               <div className={style.item}>
-                <a href="">Услуги</a>
+                <a href="#services">Услуги</a>
               </div>
               <div className={style.item}>
                 <a href="">Портфолио</a>
               </div>
               <div className={style.item}>
+                <a href="">О нас</a>
+              </div>
+            </div>
+            <div className={!isHamburgerOpened ? style.mobileMenu : classNames(style.mobileMenu, style.mobileMenuActive)}>
+              <div className={style.hamburger} onClick={() => this.setState({ isHamburgerOpened: !isHamburgerOpened })}>
+                <div className={style.line} />
+                <div className={style.line} />
+                <div className={style.line} />
+                <div className={style.line} />
+              </div>
+              <div className={style.links}>
+                <a href="">Услуги</a>
+                <a href="">Портфолио</a>
                 <a href="">О нас</a>
               </div>
             </div>
