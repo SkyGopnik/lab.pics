@@ -67,7 +67,7 @@ export class ServicesSection extends React.Component<IProps, IState> {
           <div className="container">
             {services.map((item, index) => (
               <div key={index}>
-                <div className={style.item}>
+                <a className={style.item} href="#form">
                   <div className={style.content}>
                     <h1 className={style.title}>{item.title}</h1>
                     <h4 className={style.description}>
@@ -76,7 +76,7 @@ export class ServicesSection extends React.Component<IProps, IState> {
                     </h4>
                     <h4 className={style.price}>от {item.price.toLocaleString()}₽</h4>
                   </div>
-                </div>
+                </a>
                 {(index !== services.length - 1) && <div className={style.separator} />}
               </div>
             ))}

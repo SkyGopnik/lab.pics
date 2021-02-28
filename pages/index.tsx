@@ -1,5 +1,6 @@
 import React from "react";
 import axios from 'axios';
+import { configureAnchors } from 'react-scrollable-anchor';
 
 import {Footer, Header} from "../components";
 import {
@@ -9,6 +10,8 @@ import {
   PortfolioSection,
   ServicesSection
 } from "../components/Pages";
+
+configureAnchors({offset: -70 })
 
 axios.defaults.baseURL = 'https://api.lab.pics';
 axios.defaults.responseType = 'json';

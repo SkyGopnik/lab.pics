@@ -41,13 +41,13 @@ export class Header extends React.Component<IProps, IState> {
             </Link>
             <div className={style.menu}>
               <div className={style.item}>
+                <a href="#portfolio">Портфолио</a>
+              </div>
+              <div className={style.item}>
                 <a href="#services">Услуги</a>
               </div>
               <div className={style.item}>
-                <a href="">Портфолио</a>
-              </div>
-              <div className={style.item}>
-                <a href="">О нас</a>
+                <a href="#about">О нас</a>
               </div>
             </div>
             <div className={!isHamburgerOpened ? style.mobileMenu : classNames(style.mobileMenu, style.mobileMenuActive)}>
@@ -57,10 +57,10 @@ export class Header extends React.Component<IProps, IState> {
                 <div className={style.line} />
                 <div className={style.line} />
               </div>
-              <div className={style.links}>
-                <a href="">Услуги</a>
-                <a href="">Портфолио</a>
-                <a href="">О нас</a>
+              <div className={style.links} onClick={() => this.setState({ isHamburgerOpened: !isHamburgerOpened })}>
+                <a href="#portfolio">Портфолио</a>
+                <a href="#services">Услуги</a>
+                <a href="#about">О нас</a>
               </div>
             </div>
           </div>

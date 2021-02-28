@@ -15,9 +15,9 @@ export class Footer extends React.Component {
       <footer className={style.footer}>
         <div className={style.data}>
           <div className={style.menu}>
-            <a href="#">Услуги</a>
-            <a href="#">Портфолио</a>
-            <a href="#">О нас</a>
+            <a href="#portfolio">Портфолио</a>
+            <a href="#services">Услуги</a>
+            <a href="#about">О нас</a>
           </div>
           <div className={style.contacts}>
             <div className={style.title}>Контакты</div>
