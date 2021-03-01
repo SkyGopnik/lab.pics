@@ -12,7 +12,7 @@ export class Footer extends React.Component {
 
   render() {
     return (
-      <ScrollableAnchor id="form">
+      <ScrollableAnchor id="footer">
         <footer className={style.footer}>
           <div className={style.data}>
             <div className={style.menu}>
