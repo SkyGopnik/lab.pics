@@ -24,7 +24,7 @@ export class PortfolioSection extends React.Component {
               <div className={style.list}>
                 <div className={style.item}>
                   <h4 className={style.subHeader}>Что за проект</h4>
-                  <h1 className={style.header}>Название проекта</h1>
+                  <div className={style.header}>Название проекта</div>
                   <h3 className={style.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus malesuada bibendum cursus molestie orci est ligula. Sed amet maecenas vitae ridiculus lobortis est dui.
                   </h3>
@@ -34,7 +34,7 @@ export class PortfolioSection extends React.Component {
                 </div>
                 <div className={style.item}>
                   <h4 className={style.subHeader}>Что за проект</h4>
-                  <h1 className={style.header}>Название проекта</h1>
+                  <div className={style.header}>Название проекта</div>
                   <h3 className={style.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus malesuada bibendum cursus molestie orci est ligula. Sed amet maecenas vitae ridiculus lobortis est dui.
                   </h3>
@@ -44,7 +44,7 @@ export class PortfolioSection extends React.Component {
                 </div>
                 <div className={style.item}>
                   <h4 className={style.subHeader}>Что за проект</h4>
-                  <h1 className={style.header}>Название проекта</h1>
+                  <div className={style.header}>Название проекта</div>
                   <h3 className={style.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus malesuada bibendum cursus molestie orci est ligula. Sed amet maecenas vitae ridiculus lobortis est dui.
                   </h3>
@@ -54,7 +54,7 @@ export class PortfolioSection extends React.Component {
                 </div>
                 <div className={style.item}>
                   <h4 className={style.subHeader}>Что за проект</h4>
-                  <h1 className={style.header}>Название проекта</h1>
+                  <div className={style.header}>Название проекта</div>
                   <h3 className={style.description}>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque rhoncus malesuada bibendum cursus molestie orci est ligula. Sed amet maecenas vitae ridiculus lobortis est dui.
                   </h3>

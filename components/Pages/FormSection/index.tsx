@@ -124,7 +124,7 @@ export class FormSection extends React.Component<IProps, IState> {
             <div className={style.wrapper}>
               <img src="/static/form.svg" alt="Герой" />
               <div className={style.sendForm}>
-                <h1>Давайте сотрудничать</h1>
+                <div className={style.title}>Давайте сотрудничать</div>
                 <div className={style.input}>
                   <label>
                     <div>Как Вас зовут?</div>

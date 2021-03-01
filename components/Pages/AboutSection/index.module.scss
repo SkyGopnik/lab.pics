@@ -14,7 +14,7 @@
     .info {
       width: 50%;
 
-      h1 {
+      .title {
         margin: 12px 0;
 
         font-family: 'TTFirsNeue-DemiBold', cursive;
@@ -44,7 +44,7 @@
 
       margin: 50px;
 
-      h1 {
+      .title {
         display: none;
       }
 
@@ -119,7 +119,7 @@
 
         //background-color: goldenrod;
 
-        h1 {
+        .title {
           margin: 12px 0;
 
           display: block;
@@ -151,7 +151,7 @@
       margin: 0 50px;
 
       .info, .links {
-        h1 {
+        .title {
           font-size: 36px;
           line-height: 110%;
         }

@@ -57,13 +57,13 @@ export class AboutSection extends React.Component<IProps, IState> {
           <div className="container">
             <div className={style.wrapper}>
               <div className={style.info}>
-                <h1>Коротко о нас</h1>
+                <div className={style.title}>Коротко о нас</div>
                 <p><span>Лаборатория</span> — дружная команда из крутых дизайнеров, способных решить любую Вашу задачу. Мы очень любим дизайн и с трепетом относимся к каждому проекту, сделанному нашими руками.</p>
                 <p>С самого открытия студии мы помогаем клиентам развить их бизнес, создавая сайты и новые бренды.</p>
                 <p>Мы специализируемся на веб-дизайне, но также всегда готовы сделать запоминающиеся логотипы, приятные оформления и многое другое!</p>
               </div>
               <div className={style.links}>
-                <h1>Следите за нами в соц.сетях</h1>
+                <div className={style.title}>Следите за нами в соц.сетях</div>
                 <div className={style.list}>
                   {links.map((item, index) => (
                     <a

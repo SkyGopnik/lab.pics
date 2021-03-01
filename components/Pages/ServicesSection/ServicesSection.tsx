@@ -69,7 +69,7 @@ export class ServicesSection extends React.Component<IProps, IState> {
               <div key={index}>
                 <a className={style.item} href="#form">
                   <div className={style.content}>
-                    <h1 className={style.title}>{item.title}</h1>
+                    <div className={style.title}>{item.title}</div>
                     <h4 className={style.description}>
                       <div>{item.description}</div>
                       <div className={style.price}>от {item.price.toLocaleString()}₽</div>
