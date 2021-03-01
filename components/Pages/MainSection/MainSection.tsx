@@ -25,7 +25,9 @@ export class MainSection extends React.Component {
               <div className={style.wordWrap}>Реализовали более 300 проектов и имеем 90% положительных отзывов</div>
             </h3>
             <div className={style.action}>
-              <button>Связаться с нами</button>
+              <a href="#form">
+                <button>Связаться с нами</button>
+              </a>
               <div className={style.arrow} />
             </div>
           </div>

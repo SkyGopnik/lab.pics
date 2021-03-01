@@ -10,6 +10,8 @@
 
   .rightImg, .leftImg {
     position: absolute;
+
+    z-index: -1;
   }
 
   .rightImg {
@@ -20,6 +22,12 @@
   .leftImg {
     left: 0;
     bottom: -500px;
+  }
+
+  @media screen and (max-width: 1450px) {
+    .rightImg, .leftImg {
+      display: none;
+    }
   }
 
   .wrapper {
@@ -38,9 +46,10 @@
       }
 
       h1 {
-        margin: 0 0 24px 0;
+        margin: 12px 0;
 
-        font-family: 'TTFirsNeue-Bold', cursive;
+        //font-family: 'TTFirsNeue-Bold', cursive;
+        font-family: 'TTFirsNeue-DemiBold', cursive;
         font-weight: 600;
         font-size: 48px;
         line-height: 62px;
@@ -57,6 +66,14 @@
           color: #2E2F33;
         }
 
+        .valid {
+          border: 2px solid #52AC00;
+        }
+
+        .error {
+          border: 2px solid #D90036;
+        }
+
         input {
           width: 100%;
 
@@ -70,11 +87,33 @@
           border-radius: 15px;
           border: 2px solid #E9EBF5;
 
+          transition: .3s;
+
           box-sizing: border-box;
-          background-color: transparent;
+          background-color: #fff;
 
           &::placeholder {
+            font-family: 'TTFirsNeue-Regular', cursive;
+            font-size: 18px;
+            line-height: 150%;
+
             color: #717AA6;
+          }
+
+          &:focus {
+            border: 2px solid #006BFF;
+          }
+        }
+
+        @media screen and (max-width: 450px) {
+          & {
+            padding: 6px 0;
+
+            input {
+              padding: 14px;
+
+              border-radius: 10px;
+            }
           }
         }
       }
@@ -94,9 +133,22 @@
         outline: none;
 
         cursor: pointer;
+        transition: .5s;
 
         color: #ffffff;
         background: #006BFF;
+
+        &:hover {
+          opacity: .5;
+        }
+
+        @media screen and (max-width: 450px) {
+          & {
+            height: 50px;
+
+            border-radius: 10px;
+          }
+        }
       }
     }
   }
@@ -139,6 +191,10 @@
         width: 100%;
 
         margin-left: 0;
+
+        h1 {
+          margin: 24px 0;
+        }
       }
 
       img {
@@ -156,12 +212,6 @@
       margin: 0 20px;
 
       .sendForm {
-        h1 {
-          margin-bottom: 24px;
-
-          text-align: center;
-        }
-
         button {
           width: 100%;
 

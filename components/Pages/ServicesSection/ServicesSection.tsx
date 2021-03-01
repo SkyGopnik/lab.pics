@@ -1,4 +1,6 @@
 import React from "react";
+import ScrollableAnchor from 'react-scrollable-anchor';
+
 import style from "./ServicesSection.module.scss";
 
 interface IProps {}
@@ -38,7 +40,7 @@ export class ServicesSection extends React.Component<IProps, IState> {
           price: 27800
         },
         {
-          title: 'Оформление соц. сетей',
+          title: 'Оформление соц.сетей',
           description: 'Поможем оформить Вашу любимую социальную сеть',
           price: 3750
         },
@@ -60,25 +62,27 @@ export class ServicesSection extends React.Component<IProps, IState> {
     const { services } = this.state;
 
     return (
-      <section className={style.services}>
-        <div className="container">
-          {services.map((item, index) => (
-            <div key={index}>
-              <div className={style.item}>
-                <div className={style.content}>
-                  <h1 className={style.title}>{item.title}</h1>
-                  <h4 className={style.description}>
-                    <div>{item.description}</div>
-                    <div className={style.price}>от {item.price.toLocaleString()}₽</div>
-                  </h4>
-                  <h4 className={style.price}>от {item.price.toLocaleString()}₽</h4>
-                </div>
+      <ScrollableAnchor id="services">
+        <section className={style.services}>
+          <div className="container">
+            {services.map((item, index) => (
+              <div key={index}>
+                <a className={style.item} href="#form">
+                  <div className={style.content}>
+                    <h1 className={style.title}>{item.title}</h1>
+                    <h4 className={style.description}>
+                      <div>{item.description}</div>
+                      <div className={style.price}>от {item.price.toLocaleString()}₽</div>
+                    </h4>
+                    <h4 className={style.price}>от {item.price.toLocaleString()}₽</h4>
+                  </div>
+                </a>
+                {(index !== services.length - 1) && <div className={style.separator} />}
               </div>
-              {(index !== services.length - 1) && <div className={style.separator} />}
-            </div>
-          ))}
-        </div>
-      </section>
+            ))}
+          </div>
+        </section>
+      </ScrollableAnchor>
     );
   }
 }
