@@ -36,11 +36,9 @@
     justify-content: center;
     flex-direction: column;
 
-    .wordWrap {
-      display: none;
-    }
-
     h1 {
+      width: 400px;
+
       margin: 0;
 
       font-family: 'TTFirsNeue-Bold', cursive;
@@ -56,6 +54,8 @@
     }
 
     h3 {
+      width: 400px;
+
       margin: 22px 0 0 0;
 
       font-family: 'TTFirsNeue-Regular', cursive;
@@ -159,12 +159,20 @@
 
       text-align: center;
 
-      .noWordWrap {
-        display: none;
+      h1 {
+        width: 650px;
       }
 
-      .wordWrap {
-        display: flex;
+      h3 {
+        width: 500px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .content {
+      h1, h3 {
+        width: auto;
       }
     }
   }
