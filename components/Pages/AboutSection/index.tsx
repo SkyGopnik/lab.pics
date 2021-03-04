@@ -23,25 +23,25 @@ export class AboutSection extends React.Component<IProps, IState> {
         {
           title: 'VK',
           description: 'Постим работы, рассказываем о них',
-          src: '/static/links/vk.png',
+          src: '/static/links/vk.svg',
           href: 'https://vk.com/lab.dsgn'
         },
         {
           title: 'Telegram',
           description: 'Сделаем крутые проекты вместе!',
-          src: '/static/links/tg.png',
+          src: '/static/links/tg.svg',
           href: 'https://t.me/labdes'
         },
         {
           title: 'Behance',
           description: 'Это наше портфолио, оно классное!',
-          src: '/static/links/bhance.png',
+          src: '/static/links/bhance.svg',
           href: 'https://www.behance.net/labdes'
         },
         {
           title: 'Dribbble',
           description: 'Выкладываем работы в «Шотах» 1600×1200',
-          src: '/static/links/dribbble.png',
+          src: '/static/links/dribbble.svg',
           href: 'https://dribbble.com/labdesign'
         }
       ]
