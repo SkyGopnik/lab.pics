@@ -193,6 +193,18 @@
   }
 }
 
+@media screen and (max-width: 700px) {
+  .about {
+    .wrapper {
+      .links {
+        .list {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (max-width: 600px) {
   .about {
     padding: 30px 0;
