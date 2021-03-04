@@ -132,7 +132,7 @@ export class FormSection extends React.Component<IProps, IState> {
                       className={this.checkValid(name.error)}
                       name="name"
                       type="text"
-                      placeholder="Введите Ваше имя..."
+                      placeholder="Введите Ваше имя"
                       value={name.value}
                       onChange={this.handleInputChange}
                     />
@@ -145,7 +145,7 @@ export class FormSection extends React.Component<IProps, IState> {
                       className={this.checkValid(href.error)}
                       name="href"
                       type="text"
-                      placeholder="Введите ссылку на социальную сеть или E-mail..."
+                      placeholder="Ваш номер телефона или ссылка на соц. сеть"
                       value={href.value}
                       onChange={this.handleInputChange}
                     />
