@@ -190,6 +190,22 @@
 
           .item {
             p {
+              width: 200px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .about {
+    .wrapper {
+      .links {
+        .list {
+          .item {
+            p {
               width: auto;
             }
           }
