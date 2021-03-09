@@ -23,10 +23,16 @@ export class Header extends React.Component<IProps, IState> {
   }
 
   componentDidMount() {
+    this.checkOffset();
+
     document.addEventListener('scroll', () => {
-      this.setState({
-        isBackground: pageYOffset > 0
-      })
+      this.checkOffset();
+    });
+  }
+
+  checkOffset() {
+    this.setState({
+      isBackground: pageYOffset > 0
     });
   }
 
