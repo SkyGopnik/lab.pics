@@ -58,10 +58,19 @@ export class Header extends React.Component<IProps, IState> {
                 <div className={style.line} />
                 <div className={style.line} />
               </div>
-              <div className={style.links} onClick={() => this.setState({ isHamburgerOpened: !isHamburgerOpened })}>
-                <a href="#portfolio">Портфолио</a>
-                <a href="#services">Услуги</a>
-                <a href="#about">О нас</a>
+              <div className={style.mobileMenu} onClick={() => this.setState({ isHamburgerOpened: !isHamburgerOpened })}>
+                <div className={style.wrapper}>
+                  <div className={style.title}>Меню</div>
+                  <div className={style.links}>
+                    <a href="#portfolio">Портфолио</a>
+                    <a href="#services">Услуги</a>
+                    <a href="#about">О нас</a>
+                  </div>
+                  <div className={style.contact}>
+                    <div className={style.title}>Напишите нам</div>
+                    <div className={style.email}>test@mail.ru</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
