@@ -1,9 +1,24 @@
 import React from "react";
+import {motion} from "framer-motion";
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import style from "./MainSection.module.scss";
 
-export class MainSection extends React.Component {
+interface IProps {}
+
+interface IState {
+  test: string
+}
+
+export class MainSection extends React.Component<IProps, IState> {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      test: '0%'
+    };
+  }
+
   render() {
     return (
       <ScrollableAnchor id="main">
@@ -15,7 +30,15 @@ export class MainSection extends React.Component {
               <h3>Реализовали более 300 проектов и имеем 90% положительных отзывов</h3>
               <div className={style.action}>
                 <a href="#form">
-                  <button>Связаться с нами</button>
+                  <button>
+                    <div
+                      className={style.leftAnim}
+                    />
+                    {/*<div*/}
+                    {/*  className={style.rightAnim}*/}
+                    {/*/>*/}
+                    Связаться с нами
+                  </button>
                 </a>
                 <div className={style.arrow} />
               </div>
