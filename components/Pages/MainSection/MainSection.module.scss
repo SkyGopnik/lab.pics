@@ -11,16 +11,20 @@
     z-index: -1;
 
     background-image: url("../../../public/heroImg.svg");
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: top right;
 
-    @media screen and (max-height: 920px) {
-      background-position: center;
+    @media screen and (max-width: 1430px) {
+      background-size: 90%;
     }
 
-    @media screen and (max-width: 1520px) {
+    @media screen and (max-width: 1330px) {
+      background-size: 80%;
+    }
+
+    @media screen and (max-width: 1230px) {
       background-size: 70%;
-      background-position: top right;
     }
 
     @media screen and (max-width: 1110px) {

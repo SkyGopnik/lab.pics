@@ -12,13 +12,6 @@ export class MainSection extends React.Component {
           <div className="container">
             <div className={style.content}>
               <h1>Помогаем бизнесу с <span className={style.year}>2018</span> года</h1>
-              {/*  <div className={style.noWordWrap}>*/}
-              {/*    <div>Помогаем</div>*/}
-              {/*    <div>бизнесу с</div>*/}
-              {/*  </div>*/}
-              {/*  <div className={style.wordWrap}>Помогаем бизнесу с</div>*/}
-              {/*  <div><span className={style.year}>2018</span> года</div>*/}
-              {/*</h1>*/}
               <h3>Реализовали более 300 проектов и имеем 90% положительных отзывов</h3>
               <div className={style.action}>
                 <a href="#form">
