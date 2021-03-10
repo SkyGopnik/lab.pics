@@ -124,13 +124,16 @@
 
         margin: 12px 0;
 
+        position: relative;
+
         font-family: 'TTFirsNeue-Regular', cursive;
         font-size: 24px;
         line-height: 150%;
 
         border-radius: 15px;
-        border: none;
+        border: 1px solid #006BFF;
         outline: none;
+        overflow: hidden;
 
         cursor: pointer;
         transition: .5s;
@@ -138,8 +141,32 @@
         color: #ffffff;
         background: #006BFF;
 
+        .bottom {
+          width: 0;
+          height: 100%;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          transition: .5s;
+
+          color: transparent;
+          background-color: #ffffff;
+        }
+
         &:hover {
-          opacity: .5;
+          //color: #006BFF;
+
+          .bottom {
+            width: 100%;
+
+            color: #006bff;
+          }
         }
 
         @media screen and (max-width: 450px) {
@@ -147,6 +174,18 @@
             height: 60px;
 
             border-radius: 10px;
+          }
+        }
+      }
+
+      .success {
+        border: 1px solid #52AC00;
+
+        background-color: #52AC00;
+
+        &:hover {
+          .bottom {
+            color: #52AC00;
           }
         }
       }
@@ -223,3 +262,4 @@
     }
   }
 }
+

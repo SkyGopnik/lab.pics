@@ -13,7 +13,8 @@ interface IProps {}
 
 interface IState {
   name: FormItem,
-  href: FormItem
+  href: FormItem,
+  isSuccess: boolean
 }
 
 const defaultForm = {
@@ -32,7 +33,8 @@ export class FormSection extends React.Component<IProps, IState> {
     super(props);
 
     this.state = {
-      ...defaultForm
+      ...defaultForm,
+      isSuccess: false
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -99,7 +101,8 @@ export class FormSection extends React.Component<IProps, IState> {
       });
 
       this.setState({
-        ...defaultForm
+        ...defaultForm,
+        isSuccess: true
       });
     }
 
@@ -113,7 +116,7 @@ export class FormSection extends React.Component<IProps, IState> {
   }
 
   render() {
-    const { name, href } = this.state;
+    const { name, href, isSuccess } = this.state;
 
     return (
       <ScrollableAnchor id="form">
@@ -151,7 +154,23 @@ export class FormSection extends React.Component<IProps, IState> {
                     />
                   </label>
                 </div>
-                <button onClick={this.sendForm}>Отправить</button>
+                <button
+                  className={isSuccess ? style.success : ''}
+                  onClick={this.sendForm}
+                  disabled={isSuccess}
+                >
+                  {!isSuccess ? (
+                    <>
+                      <div className={style.top}>Отправить</div>
+                      <div className={style.bottom}>Отправить</div>
+                    </>
+                  ) : (
+                    <>
+                      <div className={style.top}>Отправлено</div>
+                      <div className={style.bottom}>Отправлено</div>
+                    </>
+                  )}
+                </button>
               </div>
             </div>
           </div>

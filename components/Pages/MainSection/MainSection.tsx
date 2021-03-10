@@ -31,13 +31,8 @@ export class MainSection extends React.Component<IProps, IState> {
               <div className={style.action}>
                 <a href="#form">
                   <button>
-                    <div
-                      className={style.leftAnim}
-                    />
-                    {/*<div*/}
-                    {/*  className={style.rightAnim}*/}
-                    {/*/>*/}
-                    Связаться с нами
+                    <div className={style.top}>Связаться с нами</div>
+                    <div className={style.bottom}>Связаться с нами</div>
                   </button>
                 </a>
                 <div className={style.arrow} />
