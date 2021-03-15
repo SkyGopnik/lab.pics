@@ -21,11 +21,16 @@
         z-index: -1;
 
         img {
-          position: absolute;
-          left: 0;
-          top: 0;
           width: 100%;
           height: auto;
+
+          object-fit: cover;
+
+          //position: absolute;
+          //left: 0;
+          //top: 0;
+
+          border-radius: 8px;
         }
       }
     }

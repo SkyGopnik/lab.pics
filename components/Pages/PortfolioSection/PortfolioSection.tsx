@@ -38,7 +38,7 @@ export class PortfolioSection extends React.Component<IProps, IState> {
         },
         {
           header: 'Neowin',
-          subHeader: 'Онлайн казино с разнообразием азартных игр',
+          subHeader: 'Онлайн-казино с разнообразием азартных игр',
           description: 'Каким должен быть сайт? Удобным в использовании, комфортным для пользователя, минималистичным во всех смыслах и адаптивным для разных платформ. Таким сайтом стал и ещё один проект нашей команды — «Neowin». Казино, азарт и хороший дизайн. Что может быть лучше?',
           link: '',
           img: {
@@ -52,8 +52,8 @@ export class PortfolioSection extends React.Component<IProps, IState> {
           description: 'Бесконечная лента один из признаков современных соцсетей. Нейросеть подстраивается под ваши интересы, оценивает просмотры и лайки. Команду «Лаборатория» не обошла и работа по созданию такого типа приложения. UI и UX составляющие полноценно проработаны, а заказчик — городской портал «О,Сургут!» — доволен.',
           link: '',
           img: {
-            web: '/static/portfolio/2.png',
-            mobile: '/static/portfolio/2_mobile.png'
+            web: '/static/portfolio/3.png',
+            mobile: '/static/portfolio/3_mobile.png'
           }
         },
         {
@@ -62,8 +62,8 @@ export class PortfolioSection extends React.Component<IProps, IState> {
           description: 'Логотип – это ваш фирменный товарный знак, определяющий визуал проекта. «Риф» – компания по строительству и обслуживанию бассейнов, что мы и отобразили в символе нашего заказчика. Индивидуальный шрифт, выполненный с нуля, по толщине и форме похож на саму каплю, а также символизирует взаимодействие с водой.',
           link: '',
           img: {
-            web: '/static/portfolio/3.png',
-            mobile: '/static/portfolio/3_mobile.png'
+            web: '/static/portfolio/2.png',
+            mobile: '/static/portfolio/2_mobile.png'
           }
         }
       ]
@@ -100,7 +100,7 @@ export class PortfolioSection extends React.Component<IProps, IState> {
               {portfolio.map((item, index) => (
                 <div key={index} className={style.item}>
                   <img src={item.img.mobile} alt={item.header} />
-                  <h4><b>{item.header}</b> - {item.description}</h4>
+                  <h4><b>{item.header}</b> - {item.subHeader}</h4>
                 </div>
               ))}
             </div>
