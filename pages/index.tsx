@@ -11,7 +11,7 @@ import {
   ServicesSection
 } from "../components/Pages";
 
-configureAnchors({offset: -70 })
+configureAnchors({offset: -90 })
 
 axios.defaults.baseURL = 'https://api.lab.pics';
 axios.defaults.responseType = 'json';

@@ -74,7 +74,7 @@ export class Header extends React.Component<IProps, IState> {
                   </div>
                   <div className={style.contact}>
                     <div className={style.title}>Напишите нам</div>
-                    <div className={style.email}>design@lab.pics</div>
+                    <a className={style.email} href="mailto:design@lab.pics">design@lab.pics</a>
                   </div>
                 </div>
               </div>

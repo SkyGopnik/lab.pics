@@ -22,7 +22,11 @@ body {
   padding: 0;
   margin: 0;
 
-  //scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent !important;
+}
+
+button {
+  user-select: none;
 }
 
 a {
