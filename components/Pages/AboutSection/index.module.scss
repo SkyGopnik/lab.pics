@@ -96,33 +96,87 @@
 
       @media screen and (max-width: 1520px) {
         & {
-          margin: 50px 0 50px 50px;
+          margin: 50px;
         }
       }
     }
   }
 }
 
-@media screen and (max-width: 1350px) {
+//@media screen and (max-width: 1350px) {
+//  .about {
+//    padding: 50px 0;
+//
+//    .wrapper {
+//      flex-direction: column;
+//      align-items: flex-start;
+//
+//      .info {
+//        width: 100%;
+//
+//        .title {
+//          text-align: center;
+//        }
+//      }
+//
+//      .links {
+//        width: 100%;
+//
+//        margin: 20px 0;
+//
+//        display: flex;
+//        flex-direction: column;
+//        align-items: center;
+//
+//        .title {
+//          margin: 12px 0;
+//
+//          display: block;
+//
+//          font-family: 'TTFirsNeue-DemiBold', cursive;
+//          font-weight: 600;
+//          font-size: 48px;
+//          line-height: 62px;
+//
+//          text-align: center;
+//        }
+//
+//        .list {
+//          width: 60%;
+//
+//          grid-template-columns: .5fr .5fr;
+//          grid-template-rows: 1fr 1fr;
+//        }
+//      }
+//    }
+//  }
+//}
+
+@media screen and (max-width: 1600px) {
   .about {
     padding: 50px 0;
 
     .wrapper {
       flex-direction: column;
-      align-items: flex-start;
+      align-items: center;
 
       .info {
-        width: 100%;
+        width: 70%;
 
         .title {
           text-align: center;
+
+          font-size: 36px;
+          line-height: 110%;
+        }
+
+        p {
+          font-size: 20px;
         }
       }
 
       .links {
         width: 100%;
-
-        margin: 20px 0;
 
         display: flex;
         flex-direction: column;
@@ -135,8 +189,8 @@
 
           font-family: 'TTFirsNeue-DemiBold', cursive;
           font-weight: 600;
-          font-size: 48px;
-          line-height: 62px;
+          font-size: 36px;
+          line-height: 110%;
 
           text-align: center;
         }
@@ -152,29 +206,16 @@
   }
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1450px) {
   .about {
     .wrapper {
-      margin: 0 50px;
-
-      .info, .links {
-        .title {
-          font-size: 36px;
-          line-height: 110%;
-        }
-      }
-
       .info {
-        p {
-          font-size: 20px;
-        }
+        width: 100%;
       }
 
       .links {
-        width: 100%;
-
         .list {
-          width: 70%;
+          width: 80%;
         }
       }
     }
@@ -184,6 +225,8 @@
 @media screen and (max-width: 850px) {
   .about {
     .wrapper {
+      margin: 0 50px;
+
       .links {
         .list {
           width: 80%;

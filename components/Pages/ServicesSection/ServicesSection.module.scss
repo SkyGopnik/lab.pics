@@ -74,6 +74,8 @@
       }
 
       .price {
+        text-align: right;
+
         font-family: 'TTFirsNeue-Bold', cursive;
         font-weight: bold;
         font-size: 32px;
@@ -81,19 +83,9 @@
 
       @media screen and (max-width: 1450px) {
         & {
-          margin: 0 50px;
+          margin: 0 100px;
 
           grid-template-columns: 325px auto 189px;
-        }
-      }
-
-      @media screen and (max-width: 1100px) {
-        & {
-          margin: 0;
-
-          grid-template-columns: 350px 400px;
-          column-gap: 70px;
-          justify-content: center;
 
           .title {
             font-size: 36px;
@@ -110,12 +102,37 @@
               margin-bottom: 0;
             }
 
+            //.price {
+            //  margin-top: 10px;
+            //
+            //  font-size: 26px;
+            //
+            //  display: block;
+            //}
+          }
+
+          .price {
+            font-size: 26px;
+          }
+        }
+      }
+
+      @media screen and (max-width: 1100px) {
+        & {
+          margin: 0;
+
+          grid-template-columns: 350px 400px;
+          column-gap: 70px;
+          justify-content: center;
+
+          .description {
             .price {
               margin-top: 10px;
 
-              font-size: 26px;
-
               display: block;
+
+              text-align: left;
+              font-size: 26px;
             }
           }
 

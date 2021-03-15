@@ -15,16 +15,12 @@
     background-repeat: no-repeat;
     background-position: top right;
 
-    @media screen and (max-width: 1430px) {
-      background-size: 90%;
-    }
-
-    @media screen and (max-width: 1330px) {
-      background-size: 80%;
-    }
+    //@media screen and (max-width: 1430px) {
+    //  background-size: 70%;
+    //}
 
     @media screen and (max-width: 1230px) {
-      background-size: 70%;
+      background-size: 60%;
     }
 
     @media screen and (max-width: 1110px) {
@@ -69,7 +65,34 @@
       color: #717aa6;
     }
 
-    @media screen and (max-width: 1520px) {
+    .swipe {
+      position: relative;
+
+      margin-top: 100px;
+
+      display: none;
+      justify-content: center;
+      align-items: flex-end;
+
+      h3 {
+        margin: 0;
+
+        color: #000000;
+      }
+
+      svg {
+        position: absolute;
+        top: 35px;
+
+        animation-name: swipe;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-out;
+        animation-direction: alternate-reverse;
+        animation-duration: .7s;
+      }
+    }
+
+    @media screen and (max-width: 1600px) {
       h1 {
         font-size: 60px;
       }
@@ -159,7 +182,7 @@
       }
 
       .arrow {
-        width: 62px;
+        width: 65px;
         height: 185px;
 
         position: absolute;
@@ -171,9 +194,21 @@
         @media screen and (max-width: 1520px) {
           display: none;
         }
+
+        @media screen and (max-height: 810px) {
+          background-size: 90%;
+        }
+
+        @media screen and (max-height: 750px) {
+          background-size: 70%;
+        }
+
+        @media screen and (max-height: 700px) {
+          display: none;
+        }
       }
 
-      @media screen and (max-width: 1520px) {
+      @media screen and (max-width: 1600px) {
         button {
           margin-top: $buttonTop - 20px;
         }
@@ -202,6 +237,10 @@
       h3 {
         width: 500px;
       }
+
+      .swipe {
+        display: flex;
+      }
     }
   }
 
@@ -211,5 +250,14 @@
         width: auto;
       }
     }
+  }
+}
+
+@keyframes swipe {
+  from {
+    top: 35px;
+  }
+  to {
+    top: 45px;
   }
 }

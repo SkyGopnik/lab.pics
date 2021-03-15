@@ -21,6 +21,8 @@
 body {
   padding: 0;
   margin: 0;
+
+  //scroll-behavior: smooth;
 }
 
 a {
@@ -43,6 +45,12 @@ img, svg {
     width: 100%;
   }
 
+  section {
+    padding: 0 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
   section {
     padding: 0 50px;
   }

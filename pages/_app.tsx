@@ -16,8 +16,8 @@ export default function App ({ Component, pageProps }) {
         <meta property="og:type" content="article" />
         <meta property="og:title" content="Лаборатория" />
         <meta property="og:description" content="Студия веб-дизайна" />
-        <meta property="og:image" content="https://lab.pics/static/imgs/social.png" />
-        <meta property="og:url" content="https://lab.pics/static/imgs/social.png" />
+        <meta property="og:image" content="https://lab.skyreglis.studio/static/social.png" />
+        <meta property="og:url" content="https://lab.skyreglis.studio/static/social.png" />
         <meta property="og:site_name" content="Лаборатория" />
       </Head>
       <Component {...pageProps} />

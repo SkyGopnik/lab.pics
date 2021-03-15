@@ -48,17 +48,20 @@ export class FormSection extends React.Component<IProps, IState> {
 
     let error = '';
 
-    if (name === 'name') {
-      if (!/^[a-zA-Zа-яА-ЯёЁ_-]{2,30}$/.test(value)) {
-        error = 'Запрещённые символы';
-      }
+    if (value.length === 0) {
+      error = 'Обязательное поле';
     }
-
-    if (name === 'href') {
-      if (!/^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-Za-zА-Яа-я0-9\-]*\.?)*\.{1}[A-Za-zА-Яа-я0-9-]{2,8}(\/([\w#!:.?+=&%@!\-\/])*)?/.test(value)) {
-        error = 'Неправильная ссылка';
-      }
-    }
+    // if (name === 'name') {
+    //   if (!/([а-яА-яa-zA-zёЁ]+)+([а-яА-яa-zA-zёЁ]+)/ig.test(value)) {
+    //     error = 'Запрещённые символы';
+    //   }
+    // }
+    //
+    // if (name === 'href') {
+    //   if (!/^((ftp|http|https):\/\/)?(www\.)?([A-Za-zА-Яа-я0-9]{1}[A-Za-zА-Яа-я0-9\-]*\.?)*\.{1}[A-Za-zА-Яа-я0-9-]{2,8}(\/([\w#!:.?+=&%@!\-\/])*)?/.test(value)) {
+    //     error = 'Неправильная ссылка';
+    //   }
+    // }
 
     this.setState({
       ...this.state,

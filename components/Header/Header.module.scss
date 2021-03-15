@@ -179,6 +179,14 @@
 @media screen and (max-width: 1600px) {
   .header {
     .headerWrapper {
+      padding: 0 100px;
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .header {
+    .headerWrapper {
       padding: 0 50px;
     }
   }

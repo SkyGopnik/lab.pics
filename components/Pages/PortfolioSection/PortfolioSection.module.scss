@@ -29,6 +29,7 @@
           //position: absolute;
           //left: 0;
           //top: 0;
+          border: 1px solid #F0F2FA;
 
           border-radius: 8px;
         }
@@ -92,7 +93,7 @@
       }
     }
 
-    @media screen and (max-width: 1400px) {
+    @media screen and (max-width: 1600px) {
       .scroll {
         width: 40%;
 
@@ -202,7 +203,13 @@
   }
 
   @media screen and (max-width: 500px) {
+    & {
+      margin: 0;
+    }
+
     .mobile {
+      margin: 10px 0;
+
       .item {
         img {
           width: 100%;
@@ -210,11 +217,5 @@
         }
       }
     }
-  }
-}
-
-@media screen and (max-width: 1400px) {
-  .portfolio {
-    margin: 0;
   }
 }
