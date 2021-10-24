@@ -3,11 +3,6 @@
 
   position: relative;
 
-  //overflow: hidden;
-
-  //height: 300px;
-  //background-color: gray;
-
   .rightImg, .leftImg {
     position: absolute;
 
@@ -48,9 +43,8 @@
       .title {
         margin: 12px 0;
 
-        //font-family: 'TTFirsNeue-Bold', cursive;
-        font-family: 'TTFirsNeue-DemiBold', cursive;
-        font-weight: 600;
+        font-family: 'TT Travels', cursive;
+        font-weight: 800;
         font-size: 48px;
         line-height: 62px;
       }
@@ -58,7 +52,8 @@
       .input {
         padding: 12px 0;
 
-        font-family: 'TTFirsNeue-Regular', cursive;
+        font-family: 'TT Travels', cursive;
+        font-weight: 500;
         font-size: 24px;
         line-height: 150%;
 
@@ -126,7 +121,7 @@
 
         position: relative;
 
-        font-family: 'TTFirsNeue-Regular', cursive;
+        font-family: 'TT Travels', cursive;
         font-size: 24px;
         line-height: 150%;
 

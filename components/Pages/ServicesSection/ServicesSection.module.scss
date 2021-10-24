@@ -35,7 +35,7 @@
       margin: 0 110px;
 
       display: grid;
-      grid-template-columns: 325px 600px 189px;
+      grid-template-columns: 325px 600px 200px;
       grid-column: 3;
       column-gap: 80px;
       align-items: center;
@@ -49,18 +49,16 @@
       }
 
       .title {
-        font-family: 'TTFirsNeue-Bold', cursive;
-        font-weight: 600;
+        font-family: 'TT Travels', cursive;
+        font-weight: 800;
         font-size: 48px;
         line-height: 62px;
       }
 
       .description {
-        //width: 70%;
-
         padding-right: 50px;
 
-        font-family: 'TTFirsNeue-Regular', cursive;
+        font-family: 'TT Travels', cursive;
         font-weight: normal;
         font-size: 28px;
 
@@ -76,7 +74,7 @@
       .price {
         text-align: right;
 
-        font-family: 'TTFirsNeue-Bold', cursive;
+        font-family: 'TT Travels', cursive;
         font-weight: bold;
         font-size: 32px;
       }
@@ -101,14 +99,6 @@
             div:first-child {
               margin-bottom: 0;
             }
-
-            //.price {
-            //  margin-top: 10px;
-            //
-            //  font-size: 26px;
-            //
-            //  display: block;
-            //}
           }
 
           .price {

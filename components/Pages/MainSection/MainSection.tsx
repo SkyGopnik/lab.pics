@@ -1,5 +1,4 @@
 import React from "react";
-import {motion} from "framer-motion";
 import ScrollableAnchor from 'react-scrollable-anchor';
 
 import style from "./MainSection.module.scss";
